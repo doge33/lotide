@@ -7,10 +7,11 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
+/* TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual("tomato","tomato");
 assertEqual("tomato", "watermelon");
 assertEqual(4,4);
 assertEqual(8,19);
+*/
