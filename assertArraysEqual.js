@@ -10,12 +10,12 @@ const eqArrays = function(arr1, arr2) {
   } return true;
 };
 
-const assertArraysEquals = function (arr1, arr2) {
-  if (eqArrays (arr1, arr2)=== true) {
-    console.log(`⭕️${arr1} is equal to ${arr2}.`)
+const assertArraysEqual = function(arr1, arr2) {
+  if (eqArrays(arr1, arr2) === true) {
+    console.log(`⭕️${arr1} is equal to ${arr2}.`);
   } else {
-    console.log(`❌${arr1} is not equal to ${arr2}.`)
+    console.log(`❌${arr1} is not equal to ${arr2}.`);
   }
-}
+};
 
-//console.log(assertArraysEquals([1,2],[1,3])); => not equal
+//console.log(assertArraysEqual([1,2],[1,3])); => not equal
