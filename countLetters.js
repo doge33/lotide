@@ -20,8 +20,8 @@ const countLetters = function(sentence) {
     }
   }
   console.log(finalObject);
-  return finalObject
-}
+  return finalObject;
+};
 /*test codes
 const sentence1Result = {
   l: 1,
