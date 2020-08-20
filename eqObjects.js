@@ -26,7 +26,7 @@ const eqObjects = function(object1, object2) {
   if (keyArr1.length === keyArr2.length) {
     for (let key of keyArr1) {
       //if type of value is array, call in the eqArrays function
-      if (typeof object1[key] === "object" && typeof object2[key] === "object"){
+      if (Array.isArray(object1[key]) && Array.isArray(object2[key])){
         if (eqArrays(object1[key],object2[key]) === false) {
           return false;
         } 
@@ -40,8 +40,8 @@ const eqObjects = function(object1, object2) {
   }
 };
 
-  /*
-       test cases for objects(arrays)
+/*
+      // test cases for objects(arrays)
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
 
@@ -67,5 +67,4 @@ const abc = { a: "1", b: "2", c: "3" };
 const cba = { c:"3",  b:"2"};
 assertEqual(eqObjects(ab, abc),false); // => false
 assertEqual(eqObjects(abc, cba), false); // 
-
 */
