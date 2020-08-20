@@ -42,7 +42,7 @@ const assertObjectsEqual = function(actual, expected) {
 
 
 
-
+/*
 const object1 = {a:1, b:2, c:3}
 const object2 = {a:1, c:3, b:2}
 const o3 = {d:"1", e:[7,8,9], f:[9,8,7]}
@@ -51,3 +51,4 @@ assertObjectsEqual(object1, object2);
 assertObjectsEqual(eqObjects(o3,o4), false);
 assertObjectsEqual(eqObjects(o3,object1), true);
 assertObjectsEqual(eqObjects(object2,o4), false);
+*/
