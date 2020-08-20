@@ -29,16 +29,17 @@ const eqObjects = function(object1, object2) {
     return false;
   }
 };
-const assertObjectsEqual = function(object1, object2) {
-  eqObjects(object1, object2)
+
+const assertObjectsEqual = function(actual, expected) {
+  eqObjects(actual, expected)
   const inspect = require('util').inspect; // <= add this line
-  //console.log(`Example label: ${inspect(actual)}`);
-  if(eqObjects(object1, object2)){
-    console.log(`Assertion Passed: ${inspect(object1)} === ${inspect(object2)}`)
+  if(eqObjects(actual, expected)){
+    console.log(`⭕️Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`)
   } else {
-    console.log(`Assertion Failed: ${inspect(object1)} !== ${inspect(object2)}`)
+    console.log(`❌Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`)
   }
 };
+
 
 
 
@@ -47,6 +48,6 @@ const object2 = {a:1, c:3, b:2}
 const o3 = {d:"1", e:[7,8,9], f:[9,8,7]}
 const o4 = {d:"1", e:[9,8,7], f:[7,8,9]}
 assertObjectsEqual(object1, object2);
-//assertObjectsEqual(eqObjects(o3,o4), false);
-//assertObjectsEqual(eqObjects(o3,object1), true);
-//assertObjectsEqual(eqObjects(object2,o4), false);
+assertObjectsEqual(eqObjects(o3,o4), false);
+assertObjectsEqual(eqObjects(o3,object1), true);
+assertObjectsEqual(eqObjects(object2,o4), false);
