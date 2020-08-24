@@ -1,20 +1,26 @@
-const assertEqual = require("../assertEqual");
+const assert = require("chai").assert;
 const tail = require("../tail");
 
-//Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
 
-console.log(tail(words)); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+//the mocha & chai based test codes
 
+describe("#tail", ()=> {
+  it ("returns ['Lighthouse', 'Labs'] for ['Yo Yo', 'Lighthouse', 'Labs']", ()=> {
+    assert.deepEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), ['Lighthouse', 'Labs']);
+  });
 
-//compare each element of the array directly, because JS can't compare arrays directly
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
+  it ("returns [] for []", ()=> {
+    assert.deepEqual(tail([]), []);
+  });
 
+  it ("returns [] for array with one element", ()=> {
+    assert.deepEqual(tail(['Lighthouse']), []);
+  });
 
-//test case 3
-const oneElement =  [];
-console.log(tail(oneElement));
+  it ("should not modify the original array", ()=> {
+    let words = ["Yo Yo", "Lighthouse", "Labs"];
+    tail(words);
+    assert.deepEqual(words, ["Yo Yo", "Lighthouse", "Labs"]);
+  });
+  
+})
