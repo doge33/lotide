@@ -1,7 +1,7 @@
 //test for head.js
 //const assertEqual = require("../assertEqual"); //=>this is your own assertion function
 
-const head = require("../head");
+const head = require("../index").head;
 const assert = require("chai").assert;
 
 //the mocha & chai based test codes

@@ -22,6 +22,8 @@ const countLetters = function(sentence) {
   console.log(finalObject);
   return finalObject;
 };
+
+module.exports = countLetters;
 /*test codes
 const sentence1Result = {
   l: 1,

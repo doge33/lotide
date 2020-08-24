@@ -29,7 +29,9 @@ const takeUntil = function(array, callback) {
     }
   }
   return newArray;
-}
+};
+
+module.exports = takeUntil;
 
   /* this is the forEach, but doesnt make it better or shorter in this case.
   array.forEach(item => {

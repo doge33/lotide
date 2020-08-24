@@ -40,6 +40,7 @@ const eqObjects = function(object1, object2) {
   }
 };
 
+module.exports = eqObjects;
 /*
       // test cases for objects(arrays)
 const cd = { c: "1", d: ["2", 3] };

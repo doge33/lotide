@@ -15,7 +15,7 @@ const findKey = function(object, callback) {
     }
   }
 }
-
+module.exports = findKey;
 /*
 const result = findKey({
   "Blue Hill": { stars: 1 },

@@ -40,7 +40,7 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-
+module.exports = assertObjectsEqual;
 
 /*
 const object1 = {a:1, b:2, c:3}

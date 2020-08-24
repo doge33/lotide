@@ -16,6 +16,8 @@ const findKeyByValue = function (object, value) {
   }
 };
 
+module.exports = findKeyByValue;
+
 // Alternatively, consider Object.keys()!
 
 /* test cases
