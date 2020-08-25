@@ -30,10 +30,11 @@ The following functions are currently implemented:
 * `tail(array)`: grab all, except the first, elements of an array; return as array
 * `middle(array)`: grab middle or middle two elements of an array; return as array
 * `findKey(obejct, callback)`: find key whose value satisfies a certian condition
-* `findKeyByValue(array)`: find key by matching its value;
-* `middle(array)`: grab middle or middle two elements of an array; return as array
-* `middle(array)`: grab middle or middle two elements of an array; return as array
-* `middle(array)`: grab middle or middle two elements of an array; return as array
-* `middle(array)`: grab middle or middle two elements of an array; return as array
-* `middle(array)`: grab middle or middle two elements of an array; return as array
-* `middle(array)`: grab middle or middle two elements of an array; return as array
+* `findKeyByValue(object, value)`: find key by matching its value to input;
+* `letterPositions(sentence)`: returns an object showing the number of times each letter appears in a string
+* `map(array,callback)`: execute a callback function on each item of an array
+* `takeUntil(array, callback)`: grab slice of array with elements taken from the beginnning until a condition is met
+* `countLetters(sentence)`: returns a count of each of the letters in a sentence;
+* `countOnly(array, itemsToCount)`: given an array of items and the items to count, returns an object of the times each of those items appeared in the array.
+* `eqArrays(arr1, arr2)`: compare the sameness of two arrays;
+* `eqObjects(obj1, obj2)`: compare the sameness of two objects;
